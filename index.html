@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+  purus metus. Fusce tristique ex vitae tortor mollis maximus. Integer
+  aliquam ultrices elit, sed pulvinar justo sollicitudin ut.">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Scss">
+  <meta name="author" content="Nemanja Vasilijevic">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enigmatry test</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
+</head>
+
+<body>
+  <div class="container-wrapper">
+    <div class="container">
+      
+      <nav>
+        <div class="logo-mob">
+          <img src="./images/bars.png" alt="">
+        </div>
+        
+        <div class="logo">
+          <img src="./images/LOGO.png" alt="logo" />
+        </div>
+        <div class="nav-manu">
+          <ul class="nav-links">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="search">
+            <input type="text" placeholder="Search" />
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+          </div>
+        </div>
+        <div class="nav-icons">
+          <div class="icon">
+            <a href="#"><i class="far fa-user"></i></a>
+          </div>
+          <div class="icon">
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="icon">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <span class="shop-num">1</span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><i class="fas fa-chevron-right"></i></li>
+      <li><a href="#">Products</a></li>
+      <li><i class="fas fa-chevron-right"></i></li>
+      <li><a href="#">Bikes</a></li>
+      <li><i class="fas fa-chevron-right"></i></li>
+    </ul>
+    <div class="main-title">
+      <div class="title">
+        <title>Product name lorem ipsum</title>
+      </div>
+      <div class="arrows">
+        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-arrow-right"></i>
+        <i class="far fa-heart"></i>
+        <i class="fas fa-share-alt"></i>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="slide-container">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="./images/image 1.png" alt="image1" />
+        </div>
+        <div class="mySlides fade">
+          <img src="./images/image 2.png" alt="image2" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div class="details-container">
+        <p style="font-weight: bold">
+          In stock - <span style="color: #fe5e41">only 2 left</span>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+          purus metus. Fusce tristique ex vitae tortor mollis maximus. Integer
+          aliquam ultrices elit, sed pulvinar justo sollicitudin ut.
+        </p>
+        <div class="dropdown-box">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <span class="btn-span">Model</span>Gents - Medium
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Gents - Medium 1</a>
+              <a href="#">Gents - Medium 2</a>
+              <a href="#">Gents - Medium 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <span class="btn-span">Color</span>Black
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Red</a>
+              <a href="#">White</a>
+              <a href="#">Orange</a>
+            </div>
+          </div>
+        </div>
+        <div class="chack-box">
+          <input type="checkbox" id="one" name="btn" value="" checked>
+          <label style="margin-bottom: 10px;" for="dugme1">Add option lorem ipsum</label><br>
+
+          <input type="checkbox" id="two" name="btn2" value="">
+          <label for="dugme2">Add option autpat velit cano totam rem aperiam</label>
+
+        </div>
+        <button id="add-to-cart" class="btn-add">Add to cart</button>
+        <button id="contact-us" class="btn-con">Contact us</button>
+        <div id="contact-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact us</h2>
+            <p>We’ll get back to you as soon as possible.</p>
+            <div class="form-modal">
+              <form>
+                <input type="email" id="email" name="email" placeholder="Your e-mail">
+                <textarea id="message" name="message" placeholder="Your message"></textarea>
+              </form>
+              <div class="btn-submit">
+                <button id="cancel" class="cancel" type="submit">Cancel</button>
+                <button class="submit" type="submit">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+      <div class="menu">
+        <p onclick="showContent('description')">Description</p>
+        <p onclick="showContent('specifications')">Specifications</p>
+        <p onclick="showContent('reviews')">Reviews(7)</p>
+      </div>
+    </div>
+    <div class="container-wrapper-desc">
+      <hr>
+    </div>
+  <div class="container">
+    <div id="description" class="content">
+      <div class="description">
+        <img  src="./images/img-img.png" alt="">
+        <div>
+          <h2>Product Description</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          <button>More info</button>
+        </div>
+      </div>
+    </div>
+    <div id="specifications" class="content">
+      <div class="description">
+        <img  src="./images/image-22.png" alt="">
+        <div>
+          <h2>Specifications</h2>
+          
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          <button>More info</button>
+        </div>
+      </div>
+    </div>
+    
+    <div id="reviews" class="content">
+      <div class="description">
+        <img  src="./images/image-33.png" alt="">
+        <div>
+          <h2>Reviews</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          
+          <button>More info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-wrapper-tehnical">
+    <div class="container">
+      <h1 class="tehnical-title">Technical specifications</h1>
+      <table class="desk-box">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th class="tr-width-2">Frame size</th>
+            <th class="tr-width-2">Weight</th>
+            <th class="tr-width-2">Max speed</th>
+            <th class="tr-width-2">Battery</th>
+            <th class="tr-width-2">Engine</th>
+          </tr>
+        </thead>
+        <tbody class="dif-back">
+          <tr >
+            <td class="tr-width">Ladies - Small</td>
+            <td class="tr-width-2">50 cm</td>
+            <td class="tr-width-2">24 kg</td>
+            <td class="tr-width-2">45 km/h</td>
+            <td class="tr-width-2">625 Wh</td>
+            <td>Bosch Performance Line Speed</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr >
+            <td class="tr-width">Ladies - Medium</td>
+            <td class="tr-width-2">55 cm</td>
+            <td class="tr-width-2">25 kg</td>
+            <td class="tr-width-2">45 km/h</td>
+            <td class="tr-width-2">625 Wh</td>
+            <td>Bosch Performance Line Speed</td>
+          </tr>
+        </tbody>
+        <tbody class="dif-back">
+          <tr >
+            <td class="tr-width">Ladies - Large</td>
+            <td class="tr-width-2">60 cm</td>
+            <td class="tr-width-2">26 kg</td>
+            <td class="tr-width-2">45 km/h</td>
+            <td class="tr-width-2">625 Wh</td>
+            <td>Bosch Performance Line Speed</td>
+          </tr>
+        </tbody>
+        <tbody >
+          <tr >
+            <td class="tr-width">Ladies - Small</td>
+            <td class="tr-width-2">50 cm</td>
+            <td class="tr-width-2">24 kg</td>
+            <td class="tr-width-2">45 km/h</td>
+            <td class="tr-width-2">625 Wh</td>
+            <td>Bosch Performance Line Speed</td>
+          </tr>
+        </tbody>
+        <tbody class="dif-back">
+          <tr >
+            <td class="tr-width">Ladies - Medium</td>
+            <td class="tr-width-2">55 cm</td>
+            <td class="tr-width-2">25 kg</td>
+            <td class="tr-width-2">45 km/h</td>
+            <td class="tr-width-2">625 Wh</td>
+            <td>Bosch Performance Line Speed</td>
+          </tr>
+        </tbody>
+        <tbody >
+          <tr >
+            <td class="tr-width">Ladies - Large</td>
+            <td class="tr-width-2">60 cm</td>
+            <td class="tr-width-2">26 kg</td>
+            <td class="tr-width-2">45 km/h</td>
+            <td class="tr-width-2">625 Wh</td>
+            <td>Bosch Performance Line Speed</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table-mob">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th class="tr-width-2">Frame size</th>
+            <th class="tr-width-2">Weight</th>
+          </tr>
+        </thead>
+        <tbody class="dif-back">
+          <tr >
+            <td class="tr-width">Ladies - Small</td>
+            <td class="tr-width-2">50 cm</td>
+            <td class="tr-width-2">24 kg</td>
+           
+          </tr>
+        </tbody>
+        <tbody>
+          <tr >
+            <td class="tr-width">Ladies - Medium</td>
+            <td class="tr-width-2">55 cm</td>
+            <td class="tr-width-2">25 kg</td>
+            
+          </tr>
+        </tbody>
+        <tbody class="dif-back">
+          <tr >
+            <td class="tr-width">Ladies - Large</td>
+            <td class="tr-width-2">60 cm</td>
+            <td class="tr-width-2">26 kg</td>
+            
+          </tr>
+        </tbody>
+        <tbody >
+          <tr >
+            <td class="tr-width">Ladies - Small</td>
+            <td class="tr-width-2">50 cm</td>
+            <td class="tr-width-2">24 kg</td>
+            
+          </tr>
+        </tbody>
+        <tbody class="dif-back">
+          <tr >
+            <td class="tr-width">Ladies - Medium</td>
+            <td class="tr-width-2">55 cm</td>
+            <td class="tr-width-2">25 kg</td>
+            
+          </tr>
+        </tbody>
+        <tbody >
+          <tr >
+            <td class="tr-width">Ladies - Large</td>
+            <td class="tr-width-2">60 cm</td>
+            <td class="tr-width-2">26 kg</td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <script src="/Java-Script/main.js"></script>
+</body>
+
+</html>
